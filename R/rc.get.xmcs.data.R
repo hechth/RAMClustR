@@ -145,8 +145,8 @@ rc.get.xcms.data <- function(xcmsObj = NULL,
       nfiles <- nrow(xcmsObj@phenoData)
     }
     if (newXCMS) {
-      if (inherits(xcmsObj, "XCMSnExp")) {  
-          nfiles <- nrow(MSnbase::pData(xcmsObj))  
+      if (inherits(xcmsObj, "XCMSnExp")) {
+          nfiles <- nrow(xcmsObj@phenoData@data)  
       }  
       if (inherits(xcmsObj, "XcmsExperiment")) {  
           nfiles <- MsExperiment::length(xcmsObj)  
