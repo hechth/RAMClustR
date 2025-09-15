@@ -31,6 +31,7 @@
 #' @concept MSFinder
 #' @concept xcms
 #' @author Corey Broeckling
+#' @import MsExperiment
 #' @export
 
 rc.get.xcms.data <- function(xcmsObj = NULL,
