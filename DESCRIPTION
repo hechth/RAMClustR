@@ -29,7 +29,8 @@ Imports:
   utils,
   webchem,
   ggplot2,
-  methods
+  methods,
+  MsExperiment
 Suggests: 
   knitr,
   rmarkdown,

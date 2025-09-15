@@ -150,7 +150,7 @@ rc.get.xcms.data <- function(xcmsObj = NULL,
           nfiles <- nrow(xcmsObj@phenoData@data)  
       }  
       if (inherits(xcmsObj, "XcmsExperiment")) {  
-          nfiles <- MsExperiment::length(xcmsObj)  
+          nfiles <- length(xcmsObj)  
       }
     }
   }
